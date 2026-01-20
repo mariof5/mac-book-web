@@ -4,7 +4,7 @@ import React from 'react'
 const StudioLights = () => {
   return (
     <group name="lights">
-        {/* <Environment resolution={256}>
+        <Environment resolution={256}>
             <group>
                 <Lightformer 
                 form="rect"
@@ -21,12 +21,17 @@ const StudioLights = () => {
                 rotation-y={Math.PI / 2}
                 />
             </group>
-        </Environment> */}
+        </Environment>
         <spotLight
         position={[-2, 10, 5]}
         angle={1.15}
         decay={0}
         intensity={Math.PI * 0.2}/>
+           <spotLight
+        position={[0, 15, 5]}
+        angle={1.15}
+        decay={0.1}
+        intensity={Math.PI * 2}/>
     </group>
   )
 }
