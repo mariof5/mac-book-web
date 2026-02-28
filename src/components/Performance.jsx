@@ -39,7 +39,7 @@ const Performance = () => {
                 scrollTrigger: {
                     trigger: sectionEl,
                     start: "top bottom",
-                    end: "bottom top",
+                    end: "center center",
                     scrub: 1,
                     invalidateOnRefresh: true,
                 },
