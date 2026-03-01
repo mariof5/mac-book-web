@@ -7,7 +7,10 @@ const useMacbookStore = create((set) => ({
     scale: 0.08,
     setScale:(scale) => set({ scale }),
 
-    reset:() => set({ color: '#232c2e', scale: 0.08 }),
+    texture: '/performance1.png',
+    setTexture:(texture) => set({ texture }),
+
+    reset:() => set({ color: '#232c2e', scale: 0.08, texture: '/performance1.png' }),
 }));
 
 export default useMacbookStore;
